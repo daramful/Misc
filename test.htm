@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Smartwell Customer Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+    <meta name="locale" content="en-US">
+    <meta name="ROBOTS" content="NONE, NOARCHIVE">
+    <meta name="GOOGLEBOT" content="NOARCHIVE">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style id="common">
+	.blueBackground {
+		background-color: #00bcda !important;
+	}
+	.nav-link {
+		color: #868686;
+		border-left: 1px solid #d0d0d0;
+	}
+	.loginPanel{
+		margin: 50px;
+		z-index: 10;
+	}
+	.toplogo{
+		z-index: 0;
+	}
+	
+	.panel{
+	z-index:0;
+	}
+	.form-group{
+		background-color: rgba(0,0,0,0);
+		width: 75%;
+		margin-top: 10%;
+	}
+
+	body { 
+	  background: url("https://uc.uxpin.com/files/542617/540331/smartwell_fruit_splash-c27413.png") no-repeat 200px center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  position: absolute;
+	  margin-left: 10%;
+	  z-index: 5;
+	}
+	
+	</style>
+
+</head>
+<body>
+<div class="container-fluid">
+	<div class="panel offset-1 col-11 h-100 row" id="panel">
+		<p id="page_loaded_msg" role="alert" aria-live="assertive" tabindex="-1" aria-label="Page has been loaded successfully"/>
+		<div class="row my-5 mx-5 loginPanel justify-content-center">
+			<div class="toplogo">
+				<img class="img-fluid d-block mx-auto" src="https://uc.uxpin.com/files/542617/540331/image-c3aec7.png"/>
+			</div>
+			<div class="form-group w-75">
+				<div class="blueBackground">
+					<div class="blueHeaderRow text-white py-4">
+						<h1 class="text-center pb-4">Smartwell Panel</h1>
+						<div id="api"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<img id="background_background_image" class="float-right mh-100 img-fluid position-absolute" src="https://uc.uxpin.com/files/542617/540331/smartwell_fruit_splash-c27413.png" alt="Illustration" />-->
+	</div>
+</div>
+	<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"/>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"/>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"/>
+</body>
+</html>
