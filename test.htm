@@ -31,13 +31,8 @@
 	.panel{
 	z-index:0;
 	}
-	.form-group{
-		background-color: rgba(0,0,0,0);
-		width: 75%;
-		margin-top: 10%;
-	}
 	.accountButton {
-	    	text-color: white;
+	    	color: white;
 		
 	}
 	ul {
@@ -52,6 +47,8 @@
 	  position: absolute;
 	  margin-left: 10%;
 	  z-index: 5;
+	  height: 100%;
+	  width: 100%;
 	}
 	
 	</style>
@@ -59,21 +56,15 @@
 </head>
 <body>
 <div class="container-fluid">
-	<div class="panel offset-1 col-11 h-100 row" id="panel">
-		<div class="row my-5 mx-5 loginPanel justify-content-center">
-			<div class="toplogo">
-				<img class="img-fluid d-block mx-auto" src="https://uc.uxpin.com/files/542617/540331/image-c3aec7.png"/>
-			</div>
-			<div class="form-group w-75">
-				<div class="blueBackground">
-					<div class="blueHeaderRow text-white py-4">
-						<h1 class="text-center pb-4">Smartwell Panel</h1>
-						<div id="api" class="text-center" />
-					</div>
-				</div>
-			</div>
+	<div class="panel row loginPanel" id="panel">
+		<div class="toplogo col-12 col-sm-8 col-md-6 col-lg-4">
+			<img class="img-fluid d-block mx-auto" src="https://uc.uxpin.com/files/542617/540331/image-c3aec7.png"/>
 		</div>
-		<!--<img id="background_background_image" class="float-right mh-100 img-fluid position-absolute" src="https://uc.uxpin.com/files/542617/540331/smartwell_fruit_splash-c27413.png" alt="Illustration" />-->
+		<div class="offset-sm-4 offset-md-6 offset-lg-8 "></div>
+		<div class="form-group blueBackground mt-5 col-12 col-sm-6 col-md-4 text-white py-4">
+			<h1 class="text-center pb-4">Smartwell Panel</h1>
+			<div id="api" class="text-center" />
+		</div>
 	</div>
 </div>
 <!-- jQuery library -->
