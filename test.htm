@@ -322,12 +322,14 @@ input[type=text]:focus {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"/> 
 <script> "use strict";
 $(document).ready(function() {
-    //customize
-    $('h2').replaceWith(function(){
-	return $("<p />", {html: $(this).html()});
-    });
-    $(".working").remove();
-    $("#forgotPassword").insertAfter($(".entry-item").last())
+    //customize    
+    $.settimeout(function(e){
+        $('h2').replaceWith(function(){
+	  return $("<p />", {html: $(this).html()});
+	});
+	$(".working").remove();
+	$("#forgotPassword").insertAfter($(".entry-item").last())
+    }, 3000);
     
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
         var t = document.createElement("style");
