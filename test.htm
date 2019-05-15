@@ -322,17 +322,6 @@ input[type=text]:focus {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"/> 
 <script> "use strict";
 $(document).ready(function() {
-    //customize    
-    setTimeout(function(e){
-        $('h2').replaceWith(function(){
-	  return $("<p />", {html: $(this).html()});
-	});
-	$(".working").remove();
-	$("#forgotPassword").insertAfter($(".entry-item").last());
-	console.debug("process")
-    }, 1000);
-    console.debug("passed")
-    
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
         var t = document.createElement("style");
         t.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}")), t.appendChild(document.createTextNode("@-ms-viewport{height:auto!important}")), document.getElementsByTagName("head")[0].appendChild(t)
@@ -341,6 +330,30 @@ $(document).ready(function() {
         var e = $("#footer_links_container");
         $(e).css("padding-top", "100px")
     }
+    
+    $('h2').replaceWith(function(){
+	return $("<p />", {html: $(this).html()});
+    });
+    $(".working").remove();
+    $("#forgotPassword").insertAfter($(".entry-item").last());
+    $(".entry-item").addClass("row");
+    $(".entry-item label").addClass("col-12");
+    $(".entry-item input").addClass("mx-auto");
+    
+    //customize    
+    setTimeout(function(e){
+        $('h2').replaceWith(function(){
+	  return $("<p />", {html: $(this).html()});
+	});
+	$(".working").remove();
+	$("#forgotPassword").insertAfter($(".entry-item").last());
+	$(".entry-item").addClass("row");
+	$(".entry-item label").addClass("col-12");
+	$(".entry-item input").addClass("mx-auto");
+	console.debug("process")
+    }, 1000);
+    console.debug("passed")
+    
 }); < /script>
 </body>
 </html>
