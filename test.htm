@@ -328,8 +328,10 @@ $(document).ready(function() {
 	  return $("<p />", {html: $(this).html()});
 	});
 	$(".working").remove();
-	$("#forgotPassword").insertAfter($(".entry-item").last())
+	$("#forgotPassword").insertAfter($(".entry-item").last());
+	console.debug("process")
     }, 1000);
+    console.debug("passed")
     
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
         var t = document.createElement("style");
