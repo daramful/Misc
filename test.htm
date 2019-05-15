@@ -45,6 +45,14 @@
 	  height: 100%;
 	  width: 100%;
 	}
+	h2 {
+	  font-size: 24px!important;	
+	}
+	    
+	.entry-item label {
+	  width: 100%!important;
+	}
+	    
 	.accountButton, button {
 	  -moz-user-select: none;
 	  user-select: none
@@ -330,30 +338,6 @@ $(document).ready(function() {
         var e = $("#footer_links_container");
         $(e).css("padding-top", "100px")
     }
-    
-    $('h2').replaceWith(function(){
-	return $("<p />", {html: $(this).html()});
-    });
-    $(".working").remove();
-    $("#forgotPassword").insertAfter($(".entry-item").last());
-    $(".entry-item").addClass("row");
-    $(".entry-item label").addClass("col-12");
-    $(".entry-item input").addClass("mx-auto");
-    
-    //customize    
-    setTimeout(function(e){
-        $('h2').replaceWith(function(){
-	  return $("<p />", {html: $(this).html()});
-	});
-	$(".working").remove();
-	$("#forgotPassword").insertAfter($(".entry-item").last());
-	$(".entry-item").addClass("row");
-	$(".entry-item label").addClass("col-12");
-	$(".entry-item input").addClass("mx-auto");
-	console.debug("process")
-    }, 1000);
-    console.debug("passed")
-    
 }); < /script>
 </body>
 </html>
