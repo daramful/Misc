@@ -310,7 +310,7 @@ input[type=text]:focus {
 		<div class="col-12 offset-sm-4 offset-md-6"></div>
 		<div class="form-group blueBackground mt-5 col-12 col-sm-6 col-md-6 text-white py-4">
 			<h1 class="text-center pb-4">Smartwell Panel</h1>
-			<div id="api" />
+			<div id="api" class="text-center" />
 		</div>
 	</div>
 </div>
@@ -323,13 +323,13 @@ input[type=text]:focus {
 <script> "use strict";
 $(document).ready(function() {
     //customize    
-    $.settimeout(function(e){
+    setTimeout(function(e){
         $('h2').replaceWith(function(){
 	  return $("<p />", {html: $(this).html()});
 	});
 	$(".working").remove();
 	$("#forgotPassword").insertAfter($(".entry-item").last())
-    }, 3000);
+    }, 1000);
     
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
         var t = document.createElement("style");
